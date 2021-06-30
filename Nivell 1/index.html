@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta Tags Necessaris -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS amb CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- Bootstrap amb arxius descarregats 
+    <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+    <!-- Fonts de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <!-- Full d'estils -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Viatge a Ítaca</title>
+  </head>
+  <body>
+    <div class="container" id="cabecera">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a clas="navbar-brand" href="#">
+            <img src="imatges/blanc amplada 200.png" alt="Logo Viatge a Itaca" width="150">
+          </a>
+          
+          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#registromodal">
+          Registro
+          </button>
+
+          <div class="modal fade" id="registromodal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                  <button type="button" class="btn-close btn-dark" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p class="parrafomodal">Rellena los siguientes datos:</p>
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="apellidos" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="apellidos">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password1">
+                    </div>
+                      <button type="submit" class="btn btn-secondary mr-auto">Enviar</button> 
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#loginmodal">
+            Login
+            </button>
+  
+            <div class="modal fade" id="loginmodal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close btn-dark" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="email2" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email2" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="password2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password2">
+                      </div>
+                      <button type="submit" class="btn btn-secondary mr-auto">Enviar</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Golden Moments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Autocaravana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Diarios de Viajes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Rincones Especiales
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Alojamientos</a></li>
+                  <li><a class="dropdown-item" href="#">Lugares de Pernocta</a></li>
+                  <li><a class="dropdown-item" href="#">Restaurantes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content-center">
+        <h1>Viatge a Ítaca</h1>
+        <p>¿Quieres viajar con nosotros? En esta web te enseñamos todo aquello que nos ha gustado más, así como los diferentes itinerarios que hemos hecho </p>
+        <a href="#" class="btn btn-light topmargin-sm">Descubre Nuestros Sitios</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h2 class="text-info">Golden Moments</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-target="#carouselExampleCaptions" data-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-target="#carouselExampleCaptions" data-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imatges/Deadvlei.jpg" class="d-block w-100" alt="Desierto de Deadvlei">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white">Deadvlei - Namibia</h5>
+            <p>Un desierto con árboles muertos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imatges/Suricata.jpg" class="d-block w-100" alt="Suricata">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white">Suricata - Botswana</h5>
+            <p>Atardecer en Ntwetwe Pan viendo las suricatas volviendo a casa</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imatges/Victoria-Falls.jpg" class="d-block w-100" alt="Cataratas Victoria">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white">Cataratas Victoria - Zimbabwe</h5>
+            <p>Vista de las Cataratas Victoria desde Zimbabwe</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imatges/zebras.jpg" class="d-block w-100" alt="Zebras">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white">Zebras - Botswana</h5>
+            <p>Zebras a tocar de una de las carreteras principales de Botswana</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <section id="portfolio">
+      <div class="container">
+        <div class="content-center">
+          <h2>Nuestros Viajes</h2>
+          <p>Aquí encontraras nuestros viajes, con su itinerario y sus etapas más importantes</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="portfolio-container">
+              <div class="portfolio-details">
+                <a href="#">
+                  <h2>Viajes en Autocaravana</h2>
+                </a>
+                <a href="#">
+                  <p>¿Quieres saber qué hacer o dónde dormir en Autocaravana?</p>
+                </a>
+              </div>
+              <img src="imatges/Gouville-sur-Mer.jpg" class="img-fluid" alt="Autocaravana en Gouville sur Mer">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-container">
+              <div class="portfolio-details">
+                <a href="#">
+                  <h2>Viajes por libre</h2>
+                </a>
+                <a href="#">
+                  <p>¿Quieres organizarte un viaje por libre?</p>
+                </a>
+              </div>
+              <img src="imatges/Perenthian.jpg" class="img-fluid" alt="Turtle Beach Perenthian Besar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+    <!-- JavaScript descarregat 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>  -->
+  </body>
+</html>
